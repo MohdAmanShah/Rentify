@@ -1,0 +1,28 @@
+.Home.grid {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 180px;
+}
+
+.Home.add-new-note-button {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+@media screen and (max-width:360px) {
+    .Home.grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.loadinganimation {
+    
+}

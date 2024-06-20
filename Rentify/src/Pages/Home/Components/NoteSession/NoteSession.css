@@ -1,0 +1,132 @@
+.NoteSession.card {
+    text-align: start;
+    position: relative;
+}
+
+
+
+.NoteSession.card .card-body {
+    overflow: scroll;
+}
+
+.NoteSession.card .card-title span.owned {
+    color: green;
+}
+
+.NoteSession.card .card-title span.invited {
+    color: orangered;
+}
+
+.NoteSession.card .card-body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.NoteSession.options {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.NoteSession.kebab {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 16px;
+    top: 12px;
+}
+
+.NoteSession.kebab figure {
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background: var(--session-kebab-menu);
+    margin: 3px 0;
+}
+
+.NoteSession.kebab-middle {
+    transition: all 0.25s cubic-bezier(0.72, 1.2, 0.71, 0.72);
+    transform: scale(1);
+    position: relative;
+    box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.16), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.12);
+    -webkit-filter: blur(0.1px);
+    filter: blur(0.1px);
+}
+
+.NoteSession.kebab-middle.active {
+    transform: scale(4.5);
+    transition: all 0.25s cubic-bezier(0.32, 2.04, 0.85, 0.54);
+    box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.16), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.NoteSession.kebab-cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: -1px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    transition: all 0.2s cubic-bezier(0.72, 1.2, 0.71, 0.72);
+    font-size: 22px;
+    user-select: none;
+}
+
+.NoteSession.kebab-cross.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.15s cubic-bezier(0.32, 2.04, 0.85, 0.54);
+}
+
+.NoteSession.options button,
+.NoteSession.options li {
+    font-family: Roboto, sans-serif;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.NoteSession.kebab-dropdown {
+    position: absolute;
+    background: white;
+    z-index: 1;
+    right: 0;
+    top: 3em;
+    padding: 0;
+    transition: all 0.25s ease-out;
+    transform: scale(0);
+    transform-origin: 100% 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.NoteSession.kebab-dropdown li {
+    display: block;
+    width: 100%;
+}
+
+.NoteSession.kebab-dropdown li button {
+    all: unset;
+    width: 100%;
+    padding: 1em 4rem;
+    display: inline-block;
+    white-space: pre;
+    box-sizing: border-box;
+}
+
+.NoteSession.kebab-dropdown li button:hover {
+    background: #ebebeb;
+}
+
+.NoteSession.kebab-dropdown:hover ul {
+    transform: scale(1);
+}
+
+.NoteSession.kebab-dropdown.active {
+    transform: scale(1);
+    transition: all 0.25s cubic-bezier(0.5, 1.8, 0.9, 0.8);
+}
+
+
+.NoteSession.kebab-dropdown li.remove-btn button:hover {
+    background-color: #dc3545;
+    color: white;
+}

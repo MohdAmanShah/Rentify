@@ -1,0 +1,172 @@
+:root {
+    --input-bg: #FFA3BE;
+    --text-color: rgba(0, 0, 0, 0.48);
+}
+
+
+.useraccount.login-nav-logo {
+    width: 80px;
+}
+
+.useraccount.login-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.useraccount.login-nav-logo img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.useraccount.login-nav-link a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    color: var(--user-account-nav-link-text-color);
+    background-color: var(--user-account-nav-link-bg);
+    font-size: 28px;
+    font-weight: bold;
+    padding: .25rem 1.5rem;
+    border-radius: 5px;
+}
+
+    .useraccount.login-nav-link a:hover {
+        outline: 2px solid black;
+    }
+
+.useraccount.account-element {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.useraccount.form-message h1,
+.useraccount.form-message p {
+    font-weight: bold;
+}
+
+.useraccount.form {
+    flex-basis: 40%;
+    font-weight: bold;
+}
+
+.useraccount.rememberMe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.useraccount.form label {
+    display: block;
+    margin-bottom: 12px;
+    user-select: none;
+}
+
+    .useraccount.form label[for="RememberMeChoice"] {
+        display: inline-block;
+        margin-left: 24px;
+        margin-bottom: 0;
+    }
+
+.useraccount.rememberMe {
+    a
+
+{
+    text-decoration: none;
+    color: #474BCA;
+}
+
+}
+
+.useraccount.rememberMe input {
+    transform: scale(2) translateX(25%);
+}
+
+.useraccount.form div {
+    margin-bottom: 12px;
+}
+
+
+
+.useraccount.form form input[type="text"],
+.useraccount.form form input[type="password"] {
+    background-color: var(--input-bg);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: .5rem 2rem;
+}
+
+.useraccount.submit {
+    margin-top: 2rem;
+}
+
+.useraccount.no-account {
+    margin-top: 8px;
+    text-align: center;
+    span
+
+{
+    color: #474BCA;
+}
+
+a {
+    color: #FFA3BE;
+    text-decoration: underline;
+}
+
+}
+
+.useraccount.form-submit {
+    color: var(--user-account-nav-link-text-color);
+    background-color: var(--user-account-nav-link-bg);
+    display: block;
+    width: 100%;
+    padding-block: .25rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+    .useraccount.form-submit:hover {
+        outline: 2px solid black;
+    }
+
+
+
+.useraccount-image {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: end;
+}
+
+    .useraccount-image img {
+        width: 500px;
+        height: auto;
+    }
+
+.placeholder {
+    visibility: hidden;
+}
+
+
+
+
+@media screen and (max-width:1080px) {
+    .useraccount-image {
+        display: none;
+    }
+
+    .useraccount.form {
+        flex-basis: 100%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .useraccount.login {
+        margin-inline: -6rem;
+    }
+}

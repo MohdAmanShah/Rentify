@@ -1,0 +1,104 @@
+:root {
+    --close-button-size: 2rem;
+}
+
+.NoteForm.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: white;
+    width: 90%;
+    max-width: 768px;
+    padding: 3.25rem;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 2px rgba(140, 140, 140, 0.25);
+    height: fit-content;
+}
+
+.NoteForm.form-element {
+    display: flex;
+    margin-bottom: 1.75rem;
+    flex-wrap: wrap;
+    row-gap: 12px;
+}
+
+.NoteForm form label {
+    width: 100px;
+    color: #6D6D6D;
+}
+
+.NoteForm.form-element input,
+.NoteForm.form-element textarea {
+    flex-grow: 1;
+    border: 2px solid #9090908d;
+    background-color: #f5f5f5a8;
+    border-radius: 5px;
+    padding-block: 4px;
+    max-height: 50vh;
+    padding-left: 4px;
+}
+
+.NoteForm.form-btn {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    justify-content: flex-start;
+}
+
+.NoteForm.form-btn input {
+    --btn-border-color: rgb(0, 90, 194);
+    width: 100px;
+    padding: 6px 12px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    line-height: 24px;
+    font-size: 16px;
+    transition: outline 75ms linear;
+    outline: 0 solid var(--btn-border-color);
+}
+
+.NoteForm.form-btn input:hover {
+    outline-width: 2px;
+}
+
+.NoteForm.NoteForm.form-btn input[type="submit"] {
+    background-color: #00BCD4;
+    margin-right: 2rem;
+}
+
+.NoteForm.NoteForm.form-btn input[type="reset"] {
+
+    background-color: #DC3545;
+}
+
+
+@media screen and (max-width:400px) {
+    .NoteForm.wrapper {
+        padding: 1rem;
+    }
+}
+
+
+.NoteForm .close-button {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    transition: transform 200ms ease-in-out;
+}
+
+.NoteForm .close-button button {
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 2rem;
+}
+
+.NoteForm .close-button:hover {
+    transform: translate(50%, -50%) scale(1.2);
+}

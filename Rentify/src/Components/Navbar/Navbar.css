@@ -1,0 +1,7 @@
+:root {
+    --navbar-height: 68px;
+}
+
+.Navbar.navbar {
+    min-height: var(--navbar-height);
+}

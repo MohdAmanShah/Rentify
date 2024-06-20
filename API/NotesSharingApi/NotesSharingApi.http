@@ -1,0 +1,6 @@
+@NotesSharingApi_HostAddress = http://localhost:5271
+
+GET {{NotesSharingApi_HostAddress}}/
+Accept: application/json
+
+###
